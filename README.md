@@ -3,8 +3,11 @@
 This is the course project for the Getting and Cleaning Data Coursera course.
 The R script, `run_analysis.R`, does the following:
 
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names. 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. download a file from the predefined location and unzip it (if it doesn't already exist) in the working directory
+2. load features and activity labels from the unzipped files
+3. load training and test data
+4. merge training and test data into one dataset
+5. convert the activity and subject columns into factors
+6. create a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair
+
+The final result is rendered into 'tidy.txt'.
